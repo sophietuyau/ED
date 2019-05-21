@@ -11,16 +11,30 @@
 
 <body>
 <div class="quiz-app"  data-role="page" data-theme="b">
+		
 		<div data-role="header"><h1>Aptitude test</h1></div>
-
-		<div class="questions"></div>
-
+		
+		<div role-main="main" class="ui-content">
+			<h2> This is an aptitude test <br/> to evaluate your level <br/> in English</h2>
+			
+			<h3 id="question">Question <span id="count"></span></h3>
+			
+			<div class="questions"></div>
+			
 			<ul class="choices">
 				<li></li>
-				</ul>
-				<button id="next" >Next</button>
-				<span id="score"></span>
-				<p id="level"></p>
+			</ul>
+		
+			<button id="Start" >Start</button>
+			<button id="next" >Next</button>
+			
+			<h1 id="score"></h1>
+			
+			<h3 id="level"></h3>
+			
+			<button id="continue">Continue</button>
+		</div>
+		
 </div>
 
 

@@ -2,6 +2,7 @@ $(document).ready(function() {
   var counter = 0;
   var score = 0;
 
+  $("#next, .choices, #question, #count, #continue").hide();
 
   var quizQuestions = [{
   question:"Noah ..... fly to Rodrigues tomorrow.",
@@ -44,11 +45,6 @@ $(document).ready(function() {
   answer: 1
 },
 {
-  question:"Don't forget ..... those letters.",
-  choices:["to post", "posting", "post","posting"],
-  answer: 0
-},
-{
   question:"I wish I ..... paid more attention to my English teacher.",
   choices:["have", "would have", "had","had had"],
   answer: 2
@@ -58,25 +54,19 @@ $(document).ready(function() {
   choices:["years back", "for years", "since years","in years"],
   answer: 0
 },
-{
-  question:"Michael ..... Paris in the morning",
-  choices:["to leaving", "leaves for", "is leaving for","leave to"],
-  answer: 2
-}
 ]
 
-  $("#start").click(function() {
-      $("#start").hide()
-      $("#next").show()
-  }); 
   
-  $("#next").on("click", function(){
+  $("#next , #Start").on("click", function(){
         
     $(".choices, .questions").empty();
+	$("#Start, h2").hide();
+	$("#next, .choices ,h3, #count").show();
+	$(".quiz-app").css("background-image","none");
 
     function incrementCounter(){
         $(
-                    "#count").text(counter);
+                    "#count").text(counter+1);
           
     
       };    
@@ -93,14 +83,19 @@ counter++
             }
         else //no more question, show total
         {
-            $("#score").text("score: " + score);
-          
+			$("#question, #count, #next").hide();
+			$("#continue").show();
+            $("#score").text(" You have scored: " + score+ " out of 10");
+            $(".quiz-app").css("background-image","url('../image/aptitudebg.jpg')");
 
-            
-            if(score >= 0 && score <= 4){
+            if(score >= 0 && score <= 3){
 				$("#level").text(" You are a Beginner");
+				
+				$("#continue").on("click", function(){
+					window.location.replace("../html/slowmain.html");
+				});
             }
-            else if(score > 4 && score <= 8){
+            else if(score > 4 && score <= 6){
 				$("#level").text(" You are an Intermediate Learner");
             }
             else{
@@ -122,10 +117,8 @@ counter++
             score +=1;
           }
       
-          if(counter > quizQuestions.length) {  
-            
-          }
+        
           
-    })
+    });
   
 });

@@ -1,0 +1,33 @@
+#input001,#input002,#input003, #input004{
+	width:150px;
+	outline: none;
+	border:none;
+}
+
+.articles{
+	background-image:url("../image/exercisesbg.jpg");
+	background-attachment:cover;
+	background-repeat:no-repeat;
+}
+
+#button,#button1,#button2{
+	margin-top:15%;
+	background-color:#669999;
+    color:#ffffff;
+    border-radius:20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#flex{
+	display:flex;
+}
+
+#after{
+	padding-top:5%;
+	padding-left:5%;
+}
+
+#before{
+	padding-top:5%;
+	padding-right:5%;
+}
