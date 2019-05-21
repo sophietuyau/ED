@@ -1,0 +1,36 @@
+#next, #Start, #continue{
+    background-color:#669999;
+    color:#ffffff;
+    border-radius:20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#span{
+	color:white;
+} 
+
+h2{
+	text-align:center;
+	margin-top:50%;
+	margin-bottom:20%;
+}
+
+.quiz-app{
+	background-image:url("../image/aptitudebg.jpg");
+	background-attachment:cover;
+	background-repeat:no-repeat;
+}
+
+.choices{
+	font-size:20px;
+}
+
+h1{
+	text-align:center;
+	margin-top:40%;
+}
+
+h3{
+	text-align:center;
+	margin-bottom:10%;
+}

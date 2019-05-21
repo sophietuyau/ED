@@ -8,14 +8,15 @@
 <!-- versionCode is optional and Android only -->
 <!-- version is in major.minor.patch format-->
 
-  <name>ED</name>
+  <name>English for Dummies</name>
 
   <description>
-      English for Dummies
+      Intelligent Tutor that assist student of Grade 1 in Mauritius
   </description>
 
   <author href="https://build.phonegap.com" email="sophietuyau.st@gmail.com">
       Sophie Tuyau
   </author>
 
+  <icon src="image/ed-icon-white-01.png" />
 </widget>
